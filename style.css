@@ -95,7 +95,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 100%;
 }
 
 /* section 1 */
@@ -233,7 +232,7 @@ main {
 
 	header,
 	main {
-		height: 100vh;
+		height: max-content;
 	}
 
 	.image-border {
