@@ -219,7 +219,7 @@ main {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-device-width: 1090px) and (max-device-height: 280px) {
+@media only screen and (max-device-width: 1090px) and (max-device-height: 400px) {
 	* {
 		overflow: visible;
 	}
