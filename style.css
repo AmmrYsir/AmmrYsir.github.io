@@ -282,3 +282,9 @@ main {
 	to {
 	}
 }
+
+@media only screen and (max-width: 319px) {
+	body {
+		display: none;
+	}
+}
