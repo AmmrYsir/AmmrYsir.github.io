@@ -178,7 +178,7 @@ header.sticky > nav > ul > li:hover {
 	margin-top: 10rem;
 }
 
-.profile-body > button {
+.profile-body > a {
 	margin: 24px auto auto auto;
 	width: 200px;
 	height: 40px;
@@ -189,7 +189,7 @@ header.sticky > nav > ul > li:hover {
 	cursor: pointer;
 }
 
-.profile-body > button:hover {
+.profile-body > a:hover {
 	background-color: #2980b9;
 }
 
@@ -204,6 +204,7 @@ header.sticky > nav > ul > li:hover {
 	background-color: white;
 	box-shadow: 0 0 2px gray;
 	margin: 5rem 0;
+	padding-bottom: 1.5rem;
 }
 
 .about > .about-edu {
