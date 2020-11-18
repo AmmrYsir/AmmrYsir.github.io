@@ -178,7 +178,7 @@ header.sticky > nav > ul > li:hover {
 	margin-top: 10rem;
 }
 
-.profile-body > a {
+.profile-body > button {
 	margin: 24px auto auto auto;
 	width: 200px;
 	height: 40px;
@@ -189,8 +189,13 @@ header.sticky > nav > ul > li:hover {
 	cursor: pointer;
 }
 
-.profile-body > a:hover {
+.profile-body > button:hover {
 	background-color: #2980b9;
+}
+
+.profile-body > button > a {
+	text-decoration: none;
+	color: inherit;
 }
 
 /* PROFILE END */
