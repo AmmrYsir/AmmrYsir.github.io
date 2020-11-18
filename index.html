@@ -3,129 +3,186 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ammar Yasir | Portfolio</title>
+		<title>Ammar Yasir | Home</title>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" href="icon/Ammar.ico" type="image/x-icon" />
 		<script
 			src="https://kit.fontawesome.com/9b997b2ecb.js"
 			crossorigin="anonymous"
 		></script>
 	</head>
-	<body class="dark">
-		<div id="theme"><i class="fas fa-moon"></i></div>
+	<body>
 		<header>
-			<div class="image-header">
-				<span class="image-border">
-					<img src="./img/Ammar.jpg" alt="" />
-				</span>
-				<h2>AMMAR YASIR BIN ABD SAMAD</h2>
-				<div class="line"></div>
-			</div>
-			<div class="skill-content">
-				<div class="card-skill">
-					<p>EXPERIENCE</p>
-					<div class="skill-bar">
-						<div
-							style="
-								height: 100%;
-								background-color: var(--font-color);
-								width: 15%;
-							"
-						></div>
-					</div>
-				</div>
-				<div class="card-skill">
-					<p>HTML</p>
-					<div class="skill-bar">
-						<div
-							style="
-								height: 100%;
-								background-color: var(--font-color);
-								width: 90%;
-							"
-						></div>
-					</div>
-				</div>
-				<div class="card-skill">
-					<p>CSS</p>
-					<div class="skill-bar">
-						<div
-							style="
-								height: 100%;
-								background-color: var(--font-color);
-								width: 80%;
-							"
-						></div>
-					</div>
-				</div>
-				<div class="card-skill">
-					<p>JAVASCRIPT</p>
-					<div class="skill-bar">
-						<div
-							style="
-								height: 100%;
-								background-color: var(--font-color);
-								width: 70%;
-							"
-						></div>
-					</div>
-				</div>
-				<div class="card-skill">
-					<p>PHP</p>
-					<div class="skill-bar">
-						<div
-							style="
-								height: 100%;
-								background-color: var(--font-color);
-								width: 65%;
-							"
-						></div>
-					</div>
-				</div>
-			</div>
+			<div class="logo">AMMRYSIR</div>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="">Portfolio</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
 		</header>
-		<main>
-			<section class="card">
-				<div class="card-header">
-					<h1>TELL ME ABOUT YOURSELF?</h1>
-					<i class="fas fa-caret-down" style="font-size: 1.6rem"></i>
-				</div>
-				<div class="card-body">
-					<p>
-						Saya seorang yang ingin tahu, jadi saya cuba untuk
-						memahami dan mempelajari ilmu baharu. Saya
-						mengadaptasikan diri dengan ilmu baru dalam masa yang
-						singkat. Bidang ini mampu memajukan diri saya kepada
-						masa depan yang lebih cerah.
-					</p>
-				</div>
-			</section>
-			<section class="card">
-				<div class="card-header">
-					<h1>WHY OUR COMPANY SHOULD HIRE YOU?</h1>
-					<i class="fas fa-caret-down" style="font-size: 1.6rem"></i>
-				</div>
-				<div class="card-body">
-					<p>
-						Saya seorang yang ingin tahu, jadi saya cuba untuk
-						memahami dan mempelajari ilmu baharu. Saya
-						mengadaptasikan diri dengan ilmu baru dalam masa yang
-						singkat. Bidang ini mampu memajukan diri saya kepada
-						masa depan yang lebih cerah.
-					</p>
-				</div>
-			</section>
-			<section class="card">
-				<div class="card-header">
-					<h1>MY PROJECT</h1>
-					<i class="fas fa-caret-down" style="font-size: 1.6rem"></i>
-				</div>
-				<div class="card-body">
-					<p>Masih dalam development okay &#129315;</p>
-				</div>
-			</section>
-		</main>
-	</body>
 
-	<script src="/main.js"></script>
+		<div class="container" id="home">
+			<main class="profile">
+				<div class="profile-header">
+					<div class="profile-header-upper">
+						<div class="profile-logo"></div>
+					</div>
+					<div class="profile-header-lower">
+						<a
+							href="https://www.facebook.com/ammar.yasir.03062000/"
+							target="_blank"
+							><i class="fab fa-facebook"></i
+						></a>
+						<a
+							href="https://www.linkedin.com/in/ammar-yasir-b619011a9/"
+							target="_blank"
+							><i class="fab fa-linkedin"></i
+						></a>
+						<a href="https://github.com/AmmrYsir" target="_blank"
+							><i class="fab fa-github"></i
+						></a>
+					</div>
+				</div>
+				<div class="profile-body">
+					<h1>
+						HI, MY NAME IS
+						<span style="color: #3498db">AMMAR</span>
+					</h1>
+					<p>Major in Computer Science - Information Technology</p>
+					<button>DOWNLOAD MY RESUME</button>
+				</div>
+			</main>
+		</div>
+
+		<div class="container" id="about" style="background-color: white">
+			<main class="about">
+				<div class="about-edu">
+					<p>EDUCATION</p>
+					<div class="line"></div>
+					<div class="about-school">
+						<i class="fas fa-school"></i>
+						<p>SEKOLAH KEBANGSAAN NUSAJAYA</p>
+						<p
+							style="
+								margin-top: 0.1rem;
+								color: rgba(109, 109, 109, 0.5);
+							"
+						>
+							2013 - 2018
+						</p>
+					</div>
+					<div class="about-school">
+						<i class="fas fa-university"></i>
+						<p>KOLEJ YAYASAN PELAJARAN JOHOR</p>
+						<p
+							style="
+								margin-top: 0.1rem;
+								color: rgba(109, 109, 109, 0.5);
+							"
+						>
+							2018 - 2021
+						</p>
+					</div>
+				</div>
+				<div class="about-main">
+					<div class="about-me">
+						<div class="about-me-explain">
+							<h4>ABOUT ME</h4>
+							<p>
+								I’m somehow very compatible with programming
+								skill due to my interest and without realising
+								that I love to spend my time learning how to
+								create my own website and so on. I also start to
+								create my own personal project to increase my
+								knowledge solely on web development and I hope I
+								can develop my skill further and become a data
+								science profession.
+							</p>
+						</div>
+					</div>
+					<div class="about-skill">
+						<div class="about-card-skill">
+							<h4>HARD SKILL</h4>
+							<div class="skill">
+								<div class="skill-box">FAST-LEARNER</div>
+								<div class="skill-box">HIGH MORALE</div>
+								<div class="skill-box">LONG-TERM WORKER</div>
+								<div class="skill-box">TEAMWORKER</div>
+							</div>
+						</div>
+						<div class="about-card-skill">
+							<h4>SOFT SKILL</h4>
+							<div class="skill">
+								<div class="skill-box">WEB DEV</div>
+								<div class="skill-box">ANDROID STUDIO</div>
+								<div class="skill-box">JAVASCRIPT</div>
+								<div class="skill-box">PHP</div>
+								<div class="skill-box">MYSQL</div>
+								<div class="skill-box">VB.NET</div>
+								<div class="skill-box">NODE.JS</div>
+								<div class="skill-box">JAVA</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div class="container" id="portfolio">
+			<h1>MY PORTFOLIO</h1>
+			<div class="portfolio-form">
+				<img src="./img/2.PNG" alt="" />
+				<div class="portfolio-form-body">
+					<div class="portfolio-description">
+						<h1>
+							<a
+								href="https://github.com/AmmrYsir/Simple-Auth-System"
+								target="_blank"
+								>SIMPLE-AUTH-SYSTEM</a
+							>
+						</h1>
+						<p>
+							Simple PHP Web Development focusing on Login and
+							Register system
+						</p>
+					</div>
+					<p>Technology: HTML - CSS - PHP</p>
+				</div>
+			</div>
+			<div class="portfolio-form">
+				<img src="./img/3.PNG" alt="" />
+				<div class="portfolio-form-body">
+					<div class="portfolio-description">
+						<h1>
+							<a
+								href="https://github.com/AmmrYsir/atern-store"
+								target="_blank"
+								>ATARN-STORE</a
+							>
+						</h1>
+						<p>
+							Atarn store is group project for User Interface
+							course ( Semester 5 )
+						</p>
+					</div>
+					<p>Technology: HTML - CSS - PHP</p>
+				</div>
+			</div>
+		</div>
+
+		<footer class="container"></footer>
+
+		<script>
+			window.addEventListener('scroll', () => {
+				let header = get('header');
+				header.classList.toggle('sticky', window.scrollY > 0);
+			});
+
+			function get(value) {
+				return document.querySelector(value);
+			}
+		</script>
+	</body>
 </html>
