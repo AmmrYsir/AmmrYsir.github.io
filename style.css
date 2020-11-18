@@ -211,7 +211,6 @@ header.sticky > nav > ul > li:hover {
 	flex-direction: column;
 	flex: 1 0 30%;
 	align-items: center;
-	padding-bottom: 1.5rem;
 }
 
 .about > .about-edu > p {
@@ -294,7 +293,6 @@ header.sticky > nav > ul > li:hover {
 .about > .about-main > .about-skill {
 	display: flex;
 	flex: 1 0 55%;
-	padding-bottom: 1.5rem;
 }
 
 .about > .about-main > .about-skill > .about-card-skill {
