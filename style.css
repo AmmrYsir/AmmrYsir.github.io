@@ -408,3 +408,11 @@ header.sticky > nav > ul > li:hover {
 }
 
 /* PORTFOLIO END */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px) {
+	body {
+		display: none;
+	}
+}
