@@ -11,6 +11,26 @@
   const mainNav = document.getElementById('mainNav');
   const themeToggle = document.getElementById('themeToggle');
   const navLinks = document.querySelectorAll('.nav__link');
+  const heroNameEl = document.getElementById('hero-name');
+
+  // Character-by-character text animation
+  function initHeroAnimation() {
+    if (!heroNameEl) return;
+
+    const fullName = 'Ammar Yasir';
+    const parts = fullName.split(' ');
+    let html = '';
+    
+    parts.forEach(function(word, wordIndex) {
+      const isLastWord = wordIndex === parts.length - 1;
+      html += '<span class="hero-word' + (isLastWord ? ' accent' : '') + '">';
+      html += word;
+      html += '</span>';
+      if (!isLastWord) html += ' ';
+    });
+    
+    heroNameEl.innerHTML = html;
+  }
 
   // Mobile Menu Toggle
   function initMobileMenu() {
@@ -103,27 +123,44 @@
   function initScrollAnimations() {
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
+      rootMargin: '0px 0px -50px 0px',
       threshold: 0.1
     };
 
     const observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    document.querySelectorAll('.skill-card, .project-card, .stat').forEach(function(el) {
-      el.style.opacity = '0';
+    // Observe skill cards
+    document.querySelectorAll('.skill-card').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Observe project cards
+    document.querySelectorAll('.project-card').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Observe stats
+    document.querySelectorAll('.stat').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Observe section headers
+    document.querySelectorAll('.about__header, .section-title').forEach(function(el) {
+      el.classList.add('section-reveal');
       observer.observe(el);
     });
   }
 
   // Initialize all modules
   function init() {
+    initHeroAnimation();
     initMobileMenu();
     initThemeToggle();
     initSmoothScroll();
