@@ -80,6 +80,10 @@
     function applyTheme(theme) {
       document.documentElement.setAttribute('data-theme', theme);
       localStorage.setItem('theme', theme);
+      
+      // Update meta theme-color
+      const themeColor = theme === 'light' ? '#f8f9fa' : '#0d0d0d';
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColor);
     }
 
     // Initial theme
